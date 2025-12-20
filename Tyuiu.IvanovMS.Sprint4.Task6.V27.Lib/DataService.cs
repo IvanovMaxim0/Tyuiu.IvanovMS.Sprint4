@@ -5,7 +5,7 @@ namespace Tyuiu.IvanovMS.Sprint4.Task6.V27.Lib
     {
         public int Calculate(string[] array)
         {
-            string[] mas = Array.FindAll(array, figures => figures.Length <= 7);
+            string[] mas = Array.FindAll(array, figures => figures.Length < 7);
             return mas.Length;
         }
     }
